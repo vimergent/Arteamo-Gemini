@@ -103,11 +103,11 @@ const projects = [
   {
     title: "Work Del Mar 2022",
     images: [
-      "Work Del Mar 2022/1 (1).jpg",
-      "Work Del Mar 2022/1 (2).jpg",
-      "Work Del Mar 2022/1 (3).jpg",
-      "Work Del Mar 2022/1 (4).jpg",
-      "Work Del Mar 2022/1 (5).jpg"
+      "../Work Del Mar 2022/1 (1).jpg",
+      "../Work Del Mar 2022/1 (2).jpg",
+      "../Work Del Mar 2022/1 (3).jpg",
+      "../Work Del Mar 2022/1 (4).jpg",
+      "../Work Del Mar 2022/1 (5).jpg"
     ]
   }
 ];
