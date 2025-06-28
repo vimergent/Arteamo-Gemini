@@ -92,11 +92,21 @@ const projects = [
   {
     title: "Playground Grand Mall Varna 2018",
     images: [
-      "../Playground Grand Mall Varna 2018/Playground (1).jpg",
-      "../Playground Grand Mall Varna 2018/Playground (2).jpg",
-      "../Playground Grand Mall Varna 2018/Playground (3).jpg",
-      "../Playground Grand Mall Varna 2018/Playground (4).jpg",
-      "../Playground Grand Mall Varna 2018/Playground (5).jpg"
+      "Playground%20Grand%20Mall%20Varna%202018/Playground%20(1).jpg",
+      "Playground%20Grand%20Mall%20Varna%202018/Playground%20(10).jpg",
+      "Playground%20Grand%20Mall%20Varna%202018/Playground%20(11).jpg",
+      "Playground%20Grand%20Mall%20Varna%202018/Playground%20(12).jpg",
+      "Playground%20Grand%20Mall%20Varna%202018/Playground%20(13).jpg",
+      "Playground%20Grand%20Mall%20Varna%202018/Playground%20(14).jpg",
+      "Playground%20Grand%20Mall%20Varna%202018/Playground%20(15).jpg",
+      "Playground%20Grand%20Mall%20Varna%202018/Playground%20(2).jpg",
+      "Playground%20Grand%20Mall%20Varna%202018/Playground%20(3).jpg",
+      "Playground%20Grand%20Mall%20Varna%202018/Playground%20(4).jpg",
+      "Playground%20Grand%20Mall%20Varna%202018/Playground%20(5).jpg",
+      "Playground%20Grand%20Mall%20Varna%202018/Playground%20(6).jpg",
+      "Playground%20Grand%20Mall%20Varna%202018/Playground%20(7).jpg",
+      "Playground%20Grand%20Mall%20Varna%202018/Playground%20(8).jpg",
+      "Playground%20Grand%20Mall%20Varna%202018/Playground%20(9).jpg"
     ]
   },
   {
