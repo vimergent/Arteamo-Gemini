@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Студио Артеамо - Интериорен Дизайн</title>
+  <link rel="stylesheet" href="base.css">
+  <link rel="stylesheet" id="theme-stylesheet" href="../themes/theme-trendy-2.css">
+</head>
+<body>
+
+  <header>
+    <h1>Студио Артеамо</h1>
+  </header>
+
+  <nav>
+    <a href="#about">За нас</a>
+    <a href="#projects">Проекти</a>
+    <a href="#contact">Контакти</a>
+  </nav>
+
+  <main>
+    <section id="about">
+      <h2>За нас</h2>
+      <p>
+        Студио Артеамо е основано през 2008 година от инж. Петя Петрова и е сред водещите имена в интериорния дизайн. Студиото е с богат опит в реализацията на множество обществени и частни проекти.
+      </p>
+      <p>
+        Със своята креативност и професионализъм, студиото и неговата основателка са удостоени с признание в престижния конкурс „Баня на годината“, организиран от Ideal Standard.
+      </p>
+      <ul>
+        <li>През 2009 г. Студио Артеамо спечелва първо място в категория „3D проект на баня“, показвайки високо ниво на прецизност и оригиналност. <a href="https://thebathroom.bg/archive/Banya-na-godinata-2009/" target="_blank">Вижте повече</a></li>
+        <li>През 2010 г. Петя Емилова от екипа на студиото получава трета награда на журито за проекта „Спокойствие и релакс“, отличаващ се с финес и практичност. <a href="https://thebathroom.bg/archive/Banya-na-godinata-2010/" target="_blank">Вижте повече</a></li>
+        <li>През 2013 г. Петя Петрова затвърждава успеха си с приза „Ideal Standard Баня на годината“ за проекта „Jazz Standard“ – дизайн, който съчетава съвременна естетика с функционалност и индивидуалност. <a href="https://thebathroom.bg/archive/Banya-na-godinata-2013/" target="_blank">Вижте повече</a></li>
+      </ul>
+    </section>
+
+    <section id="projects">
+      <h2>Проекти</h2>
+      <div id="project-grid" class="project-grid"></div>
+    </section>
+  </main>
+
+  <footer id="contact">
+    <p>Свържете се с нас: <a href="mailto:info@arteamo.bg">info@arteamo.bg</a></p>
+  </footer>
+
+  <script src="projects.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const projectGrid = document.getElementById('project-grid');
+      projects.forEach(project => {
+        const projectElement = document.createElement('div');
+        projectElement.className = 'project-card';
+        projectElement.innerHTML = `
+          <img src="${project.images[0]}" alt="${project.title}">
+          <h3>${project.title}</h3>
+        `;
+        projectGrid.appendChild(projectElement);
+      });
+    });
+  </script>
+
+</body>
+</html>

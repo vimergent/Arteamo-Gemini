@@ -1,0 +1,81 @@
+
+:root {
+  --primary-color: #333;
+  --secondary-color: #777;
+  --background-color: #fff;
+  --font-family: 'Helvetica, Arial, sans-serif';
+  --header-font-family: 'Georgia, serif';
+  --spacing-unit: 1rem;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--background-color);
+  color: var(--primary-color);
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+header {
+  background-color: var(--primary-color);
+  color: var(--background-color);
+  padding: calc(var(--spacing-unit) * 2) var(--spacing-unit);
+  text-align: center;
+}
+
+header h1 {
+  font-family: var(--header-font-family);
+  margin: 0;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  background-color: var(--secondary-color);
+  padding: var(--spacing-unit);
+}
+
+nav a {
+  color: var(--background-color);
+  text-decoration: none;
+  margin: 0 var(--spacing-unit);
+}
+
+main {
+  padding: calc(var(--spacing-unit) * 2);
+}
+
+section {
+  margin-bottom: calc(var(--spacing-unit) * 2);
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: calc(var(--spacing-unit) * 2);
+}
+
+.project-card {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.project-card img {
+  width: 100%;
+  height: auto;
+}
+
+.project-card h3 {
+  padding: var(--spacing-unit);
+  margin: 0;
+}
+
+footer {
+  background-color: var(--primary-color);
+  color: var(--background-color);
+  text-align: center;
+  padding: var(--spacing-unit);
+  margin-top: calc(var(--spacing-unit) * 2);
+}
