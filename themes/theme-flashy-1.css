@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
 :root {
   --primary-color: #ff00ff;
   --secondary-color: #00ffff;
@@ -14,16 +16,42 @@ body {
   padding: 1rem;
   background-color: #000;
   color: #0f0;
+  line-height: 1.4;
+}
+
+header {
+  padding: calc(var(--spacing-unit) * 1.5) var(--spacing-unit);
 }
 
 header h1 {
+  font-size: 2.5rem;
   color: var(--secondary-color);
   text-shadow: 0 0 5px var(--secondary-color);
 }
 
+nav {
+  padding: var(--spacing-unit);
+}
+
 nav a {
+  font-size: 1.1rem;
   color: var(--primary-color);
   text-shadow: 0 0 3px var(--primary-color);
+}
+
+main {
+  padding: calc(var(--spacing-unit) * 1.5);
+}
+
+section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: var(--primary-color);
+}
+
+.project-grid {
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: calc(var(--spacing-unit) * 1.5);
 }
 
 .project-card {
@@ -32,13 +60,23 @@ nav a {
   text-align: var(--text-align);
   background-color: #111;
   padding: 0.8rem;
+  border-radius: 0;
 }
 
 .project-card h3 {
   color: var(--secondary-color);
   font-size: 1.1rem;
+  padding: 0.5rem 0;
+}
+
+.project-images {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+  gap: 0.3rem;
 }
 
 .project-images img {
+  width: 100%;
+  height: auto;
   filter: invert(100%);
 }

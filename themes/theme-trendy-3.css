@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Arial+Black&family=Arial&display=swap');
+
 :root {
   --primary-color: #333;
   --secondary-color: #555;
@@ -13,6 +15,43 @@
 body {
   padding: 1rem;
   background-color: #eee;
+  line-height: 1.5;
+}
+
+header {
+  padding: calc(var(--spacing-unit) * 1.5) var(--spacing-unit);
+}
+
+header h1 {
+  font-size: 3.5rem;
+  color: var(--primary-color);
+  text-transform: uppercase;
+  letter-spacing: -1px;
+}
+
+nav {
+  padding: var(--spacing-unit);
+}
+
+nav a {
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+main {
+  padding: calc(var(--spacing-unit) * 1.5);
+}
+
+section h2 {
+  font-size: 2.8rem;
+  margin-bottom: 1.5rem;
+  color: var(--primary-color);
+  text-transform: uppercase;
+}
+
+.project-grid {
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: calc(var(--spacing-unit) * 2);
 }
 
 .project-card {
@@ -20,17 +59,25 @@ body {
   box-shadow: var(--card-shadow);
   text-align: var(--text-align);
   background-color: #fff;
-  padding: 1rem;
+  padding: 1.5rem;
   border-radius: 0;
 }
 
 .project-card h3 {
   font-size: 1.8rem;
   color: var(--primary-color);
-  text-transform: uppercase;
+  padding: 1rem 0;
+}
+
+.project-images {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 0.5rem;
 }
 
 .project-images img {
+  width: 100%;
+  height: auto;
   border-radius: 0;
   border: 1px solid #ccc;
 }

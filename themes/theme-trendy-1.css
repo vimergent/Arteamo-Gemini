@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap');
+
 :root {
   --primary-color: #2d5a2d;
   --secondary-color: #5a8a5a;
@@ -13,6 +15,41 @@
 body {
   padding: 3rem;
   background-image: linear-gradient(to bottom right, var(--background-color), #e0e5e0);
+  line-height: 1.7;
+}
+
+header {
+  padding: calc(var(--spacing-unit) * 3) var(--spacing-unit);
+}
+
+header h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--primary-color);
+}
+
+nav {
+  padding: var(--spacing-unit);
+}
+
+nav a {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+main {
+  padding: calc(var(--spacing-unit) * 3);
+}
+
+section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: var(--primary-color);
+}
+
+.project-grid {
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: calc(var(--spacing-unit) * 2.5);
 }
 
 .project-card {
@@ -22,16 +59,25 @@ body {
   background-color: #fff;
   border-radius: 15px;
   overflow: hidden;
+  padding: 1.5rem;
 }
 
 .project-card h3 {
   font-size: 1.6rem;
   color: var(--primary-color);
-  padding: 1rem;
+  padding: 1rem 0;
+}
+
+.project-images {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 0.8rem;
+  padding: 0.5rem;
 }
 
 .project-images img {
+  width: 100%;
+  height: auto;
   border-radius: 10px;
-  margin: 0.5rem;
   border: 2px solid var(--secondary-color);
 }

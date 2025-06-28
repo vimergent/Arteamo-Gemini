@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap');
+
 :root {
   --primary-color: #1a1a1a;
   --secondary-color: #444;
@@ -12,20 +14,65 @@
 
 body {
   padding: 2rem;
+  line-height: 1.6;
+}
+
+header {
+  padding: calc(var(--spacing-unit) * 2) var(--spacing-unit);
+}
+
+header h1 {
+  font-size: 2.5rem;
+  letter-spacing: -0.05em;
+}
+
+nav {
+  padding: var(--spacing-unit);
+}
+
+nav a {
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+main {
+  padding: calc(var(--spacing-unit) * 2);
+}
+
+section h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.project-grid {
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: calc(var(--spacing-unit) * 2);
 }
 
 .project-card {
   border: var(--card-border);
   box-shadow: var(--card-shadow);
   text-align: var(--text-align);
+  padding: 1rem;
+  border-radius: 4px;
+  background-color: #fff;
 }
 
 .project-card h3 {
   font-size: 1.2rem;
   margin-bottom: 0.5rem;
+  font-weight: 700;
+}
+
+.project-images {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.5rem;
 }
 
 .project-images img {
+  width: 100%;
+  height: auto;
   border-radius: 4px;
   margin-bottom: 0.5rem;
 }

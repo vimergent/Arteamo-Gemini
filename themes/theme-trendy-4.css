@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
 :root {
   --primary-color: #6a0dad;
   --secondary-color: #9370db;
@@ -13,6 +15,41 @@
 body {
   padding: 2.5rem;
   background-image: radial-gradient(circle, #f3e5f5, #e0c0e0);
+  line-height: 1.6;
+}
+
+header {
+  padding: calc(var(--spacing-unit) * 2.5) var(--spacing-unit);
+}
+
+header h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--primary-color);
+}
+
+nav {
+  padding: var(--spacing-unit);
+}
+
+nav a {
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+
+main {
+  padding: calc(var(--spacing-unit) * 2.5);
+}
+
+section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: var(--primary-color);
+}
+
+.project-grid {
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: calc(var(--spacing-unit) * 2.5);
 }
 
 .project-card {
@@ -22,14 +59,25 @@ body {
   background-color: #fff;
   border-radius: 10px;
   overflow: hidden;
+  padding: 1.2rem;
 }
 
 .project-card h3 {
   font-size: 1.4rem;
   color: var(--primary-color);
+  padding: 0.8rem 0;
+}
+
+.project-images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.7rem;
 }
 
 .project-images img {
+  max-width: 100%;
+  height: auto;
   border-radius: 8px;
   filter: saturate(1.2);
 }

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Segoe+UI:wght@300;400;700&display=swap');
+
 :root {
   --primary-color: #3d3d3d;
   --secondary-color: #707070;
@@ -15,6 +17,41 @@ body {
   background-image: url('https://via.placeholder.com/1500/f0f0f0/808080?text=Background'); /* Placeholder */
   background-size: cover;
   backdrop-filter: blur(10px);
+  line-height: 1.6;
+}
+
+header {
+  padding: calc(var(--spacing-unit) * 2) var(--spacing-unit);
+}
+
+header h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: var(--primary-color);
+}
+
+nav {
+  padding: var(--spacing-unit);
+}
+
+nav a {
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+
+main {
+  padding: calc(var(--spacing-unit) * 2);
+}
+
+section h2 {
+  font-size: 2.2rem;
+  margin-bottom: 1.8rem;
+  color: var(--primary-color);
+}
+
+.project-grid {
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: calc(var(--spacing-unit) * 2);
 }
 
 .project-card {
@@ -25,14 +62,25 @@ body {
   border-radius: 10px;
   overflow: hidden;
   backdrop-filter: blur(5px);
+  padding: 1.2rem;
 }
 
 .project-card h3 {
   font-size: 1.5rem;
   color: var(--primary-color);
+  padding: 0.8rem 0;
+}
+
+.project-images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.8rem;
 }
 
 .project-images img {
+  max-width: 100%;
+  height: auto;
   border-radius: 5px;
   border: none;
 }

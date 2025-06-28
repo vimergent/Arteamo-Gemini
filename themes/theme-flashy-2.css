@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+
 :root {
   --primary-color: #ff4500;
   --secondary-color: #ffa500;
@@ -14,15 +16,41 @@ body {
   padding: 3rem;
   background-image: linear-gradient(45deg, #333, #111);
   color: #fff;
+  line-height: 1.8;
+}
+
+header {
+  padding: calc(var(--spacing-unit) * 3) var(--spacing-unit);
 }
 
 header h1 {
+  font-size: 3.5rem;
   color: var(--primary-color);
   text-shadow: 3px 3px 0px #000;
 }
 
+nav {
+  padding: var(--spacing-unit);
+}
+
 nav a {
+  font-size: 1.3rem;
   color: var(--secondary-color);
+}
+
+main {
+  padding: calc(var(--spacing-unit) * 3);
+}
+
+section h2 {
+  font-size: 3rem;
+  margin-bottom: 2.5rem;
+  color: var(--primary-color);
+}
+
+.project-grid {
+  grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+  gap: calc(var(--spacing-unit) * 3.5);
 }
 
 .project-card {
@@ -32,15 +60,26 @@ nav a {
   background-color: #333;
   border-radius: 10px;
   overflow: hidden;
+  padding: 1.8rem;
 }
 
 .project-card h3 {
   color: var(--secondary-color);
   font-size: 1.8rem;
   text-transform: uppercase;
+  padding: 1rem 0;
+}
+
+.project-images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
 }
 
 .project-images img {
+  max-width: 100%;
+  height: auto;
   border-radius: 5px;
   border: 3px solid var(--primary-color);
 }

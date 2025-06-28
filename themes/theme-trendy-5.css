@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+
 :root {
   --primary-color: #c0392b;
   --secondary-color: #e74c3c;
@@ -13,6 +15,41 @@
 body {
   padding: 2rem;
   background-color: #fdf5e6;
+  line-height: 1.7;
+}
+
+header {
+  padding: calc(var(--spacing-unit) * 2) var(--spacing-unit);
+}
+
+header h1 {
+  font-size: 3.2rem;
+  color: var(--primary-color);
+  font-weight: 700;
+}
+
+nav {
+  padding: var(--spacing-unit);
+}
+
+nav a {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+main {
+  padding: calc(var(--spacing-unit) * 2);
+}
+
+section h2 {
+  font-size: 2.8rem;
+  margin-bottom: 2.2rem;
+  color: var(--primary-color);
+}
+
+.project-grid {
+  grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+  gap: calc(var(--spacing-unit) * 3);
 }
 
 .project-card {
@@ -22,15 +59,26 @@ body {
   background-color: #fff;
   border-radius: 5px;
   overflow: hidden;
+  padding: 1.5rem;
 }
 
 .project-card h3 {
   font-size: 1.7rem;
   color: var(--primary-color);
   font-weight: bold;
+  padding: 1rem 0;
+}
+
+.project-images {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 0.8rem;
+  padding: 0.5rem;
 }
 
 .project-images img {
+  width: 100%;
+  height: auto;
   border-radius: 3px;
   border: 1px solid var(--secondary-color);
 }

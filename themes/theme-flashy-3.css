@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
 :root {
   --primary-color: #f08080;
   --secondary-color: #ffb6c1;
@@ -13,15 +15,40 @@
 body {
   padding: 2rem;
   background-image: radial-gradient(circle, #fff0f5, #ffe4e1);
+  line-height: 1.6;
+}
+
+header {
+  padding: calc(var(--spacing-unit) * 2) var(--spacing-unit);
 }
 
 header h1 {
-  color: var(--primary-color);
   font-size: 3rem;
+  color: var(--primary-color);
+}
+
+nav {
+  padding: var(--spacing-unit);
 }
 
 nav a {
+  font-size: 1.2rem;
   color: var(--secondary-color);
+}
+
+main {
+  padding: calc(var(--spacing-unit) * 2);
+}
+
+section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: var(--primary-color);
+}
+
+.project-grid {
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: calc(var(--spacing-unit) * 2);
 }
 
 .project-card {
@@ -31,14 +58,24 @@ nav a {
   background-color: #fff;
   border-radius: 20px;
   overflow: hidden;
+  padding: 1.2rem;
 }
 
 .project-card h3 {
   color: var(--primary-color);
   font-size: 1.6rem;
+  padding: 0.8rem 0;
+}
+
+.project-images {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 0.5rem;
 }
 
 .project-images img {
+  width: 100%;
+  height: auto;
   border-radius: 15px;
   filter: sepia(0.5);
 }

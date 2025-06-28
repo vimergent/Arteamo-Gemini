@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap');
+
 :root {
   --primary-color: #16a085;
   --secondary-color: #1abc9c;
@@ -13,6 +15,41 @@
 body {
   padding: 2rem;
   background-color: #f0fdfa;
+  line-height: 1.6;
+}
+
+header {
+  padding: calc(var(--spacing-unit) * 2) var(--spacing-unit);
+}
+
+header h1 {
+  font-size: 2.8rem;
+  color: var(--primary-color);
+  text-transform: uppercase;
+}
+
+nav {
+  padding: var(--spacing-unit);
+}
+
+nav a {
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+
+main {
+  padding: calc(var(--spacing-unit) * 2);
+}
+
+section h2 {
+  font-size: 2.2rem;
+  margin-bottom: 1.8rem;
+  color: var(--primary-color);
+}
+
+.project-grid {
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: calc(var(--spacing-unit) * 2);
 }
 
 .project-card {
@@ -22,15 +59,26 @@ body {
   background-color: #fff;
   border-radius: 8px;
   overflow: hidden;
+  padding: 1.2rem;
 }
 
 .project-card h3 {
   font-size: 1.3rem;
   color: var(--primary-color);
   text-transform: uppercase;
+  padding: 0.8rem 0;
+}
+
+.project-images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.6rem;
 }
 
 .project-images img {
+  max-width: 100%;
+  height: auto;
   border-radius: 4px;
   filter: grayscale(0.2);
 }

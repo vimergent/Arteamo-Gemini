@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700&display=swap');
+
 :root {
   --primary-color: #4a4a4a;
   --secondary-color: #888;
@@ -13,15 +15,40 @@
 body {
   padding: 3rem;
   background-color: #fdfdfd;
+  line-height: 1.7;
+}
+
+header {
+  padding: calc(var(--spacing-unit) * 3) var(--spacing-unit);
 }
 
 header h1 {
-  color: var(--primary-color);
   font-size: 2.8rem;
+  color: var(--primary-color);
+}
+
+nav {
+  padding: var(--spacing-unit);
 }
 
 nav a {
+  font-size: 1.2rem;
   color: var(--secondary-color);
+}
+
+main {
+  padding: calc(var(--spacing-unit) * 3);
+}
+
+section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: var(--primary-color);
+}
+
+.project-grid {
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: calc(var(--spacing-unit) * 2.5);
 }
 
 .project-card {
@@ -31,14 +58,25 @@ nav a {
   background-color: #fff;
   border-radius: 10px;
   overflow: hidden;
+  padding: 1.5rem;
 }
 
 .project-card h3 {
-  color: var(--primary-color);
   font-size: 1.6rem;
+  color: var(--primary-color);
+  padding: 0.8rem 0;
+}
+
+.project-images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.7rem;
 }
 
 .project-images img {
+  max-width: 100%;
+  height: auto;
   border-radius: 8px;
   filter: saturate(0.8);
 }
