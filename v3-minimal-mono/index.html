@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="bg">
 <head>
@@ -31,7 +30,7 @@
       </p>
       <ul>
         <li>През 2009 г. Студио Артеамо спечелва първо място в категория „3D проект на баня“, показвайки високо ниво на прецизност и оригиналност. <a href="https://thebathroom.bg/archive/Banya-na-godinata-2009/" target="_blank">Вижте повече</a></li>
-        <li>През 2010 г. Петя Емилова от екипа на студиото получава трета награда на журито за проекта „Спокойствие и релакс“, отличаващ се с финес и практичност. <a href="https://thebathroom.bg/archive/Banya-na-godinata-2010/" target="_blank">Вижте повече</a></li>
+        <li>Pрез 2010 г. Петя Емилова от екипа на студиото получава трета награда на журито за проекта „Спокойствие и релакс“, отличаващ се с финес и практичност. <a href="https://thebathroom.bg/archive/Banya-na-godinata-2010/" target="_blank">Вижте повече</a></li>
         <li>През 2013 г. Петя Петрова затвърждава успеха си с приза „Ideal Standard Баня на годината“ за проекта „Jazz Standard“ – дизайн, който съчетава съвременна естетика с функционалност и индивидуалност. <a href="https://thebathroom.bg/archive/Banya-na-godinata-2013/" target="_blank">Вижте повече</a></li>
       </ul>
     </section>
@@ -53,9 +52,15 @@
       projects.forEach(project => {
         const projectElement = document.createElement('div');
         projectElement.className = 'project-card';
+        let imagesHtml = '';
+        project.images.forEach(image => {
+          imagesHtml += `<img src="${image}" alt="${project.title}">`;
+        });
         projectElement.innerHTML = `
-          <img src="${project.images[0]}" alt="${project.title}">
           <h3>${project.title}</h3>
+          <div class="project-images">
+            ${imagesHtml}
+          </div>
         `;
         projectGrid.appendChild(projectElement);
       });
