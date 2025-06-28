@@ -40,13 +40,13 @@ const projects = [
     ]
   },
   {
-    title: "Apartament Траката, Варна_2021",
+    title: "Apartament Trakata, Varna_2021",
     images: [
-      "../Apartament Траката, Варна_2021/1-1-2000x1200.jpg",
-      "../Apartament Траката, Варна_2021/10-1-768x512.jpg",
-      "../Apartament Траката, Варна_2021/11-1-768x576.jpg",
-      "../Apartament Траката, Варна_2021/12-1-768x512.jpg",
-      "../Apartament Траката, Варна_2021/13-768x1132.jpg"
+      "../Apartament Trakata, Varna_2021/1-1-2000x1200.jpg",
+      "../Apartament Trakata, Varna_2021/10-1-768x512.jpg",
+      "../Apartament Trakata, Varna_2021/11-1-768x576.jpg",
+      "../Apartament Trakata, Varna_2021/12-1-768x512.jpg",
+      "../Apartament Trakata, Varna_2021/13-768x1132.jpg"
     ]
   },
   {
