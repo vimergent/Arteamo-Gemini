@@ -54,7 +54,7 @@
         projectElement.className = 'project-card';
         let imagesHtml = '';
         project.images.forEach(image => {
-          imagesHtml += `<img src="${image}" alt="${project.title}">`;
+          imagesHtml += `<img src="../${image}" alt="${project.title}">`;
         });
         projectElement.innerHTML = `
           <h3>${project.title}</h3>
