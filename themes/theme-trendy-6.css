@@ -1,1 +1,37 @@
-:root { --primary-color: #16a085; --secondary-color: #1abc9c; --background-color: #e8f8f5; --header-font-family: 'Raleway', sans-serif; --font-family: 'Raleway', sans-serif; }
+
+:root {
+  --primary-color: #16a085;
+  --secondary-color: #1abc9c;
+  --background-color: #e8f8f5;
+  --font-family: 'Raleway', sans-serif;
+  --header-font-family: 'Raleway', sans-serif;
+  --spacing-unit: 1rem;
+  --card-border: none;
+  --card-shadow: 0 4px 8px rgba(22,160,133,0.15);
+  --text-align: center;
+}
+
+body {
+  padding: 2rem;
+  background-color: #f0fdfa;
+}
+
+.project-card {
+  border: var(--card-border);
+  box-shadow: var(--card-shadow);
+  text-align: var(--text-align);
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.project-card h3 {
+  font-size: 1.3rem;
+  color: var(--primary-color);
+  text-transform: uppercase;
+}
+
+.project-images img {
+  border-radius: 4px;
+  filter: grayscale(0.2);
+}

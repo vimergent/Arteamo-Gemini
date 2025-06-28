@@ -1,1 +1,45 @@
-:root { --primary-color: #8a2be2; --secondary-color: #9932cc; --background-color: #e6e6fa; --header-font-family: 'Pacifico', cursive; --font-family: 'Pacifico', cursive; }
+
+:root {
+  --primary-color: #8a2be2;
+  --secondary-color: #9932cc;
+  --background-color: #e6e6fa;
+  --font-family: 'Pacifico', cursive;
+  --header-font-family: 'Pacifico', cursive;
+  --spacing-unit: 1.4rem;
+  --card-border: none;
+  --card-shadow: 0 8px 16px rgba(138,43,226,0.3);
+  --text-align: center;
+}
+
+body {
+  padding: 2.5rem;
+  background-image: linear-gradient(to top left, #e6e6fa, #d8bfd8);
+}
+
+header h1 {
+  color: var(--primary-color);
+  font-size: 3.5rem;
+}
+
+nav a {
+  color: var(--secondary-color);
+}
+
+.project-card {
+  border: var(--card-border);
+  box-shadow: var(--card-shadow);
+  text-align: var(--text-align);
+  background-color: #fff;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.project-card h3 {
+  color: var(--primary-color);
+  font-size: 1.7rem;
+}
+
+.project-images img {
+  border-radius: 10px;
+  filter: hue-rotate(30deg);
+}

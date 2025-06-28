@@ -1,1 +1,45 @@
-:root { --primary-color: #ff00ff; --secondary-color: #00ffff; --background-color: #000; --header-font-family: 'VT323', monospace; --font-family: 'VT323', monospace; }
+
+:root {
+  --primary-color: #ff00ff;
+  --secondary-color: #00ffff;
+  --background-color: #000;
+  --font-family: 'VT323', monospace;
+  --header-font-family: 'VT323', monospace;
+  --spacing-unit: 0.7rem;
+  --card-border: 2px solid var(--primary-color);
+  --card-shadow: 0 0 10px var(--primary-color);
+  --text-align: left;
+}
+
+body {
+  padding: 1rem;
+  background-color: #000;
+  color: #0f0;
+}
+
+header h1 {
+  color: var(--secondary-color);
+  text-shadow: 0 0 5px var(--secondary-color);
+}
+
+nav a {
+  color: var(--primary-color);
+  text-shadow: 0 0 3px var(--primary-color);
+}
+
+.project-card {
+  border: var(--card-border);
+  box-shadow: var(--card-shadow);
+  text-align: var(--text-align);
+  background-color: #111;
+  padding: 0.8rem;
+}
+
+.project-card h3 {
+  color: var(--secondary-color);
+  font-size: 1.1rem;
+}
+
+.project-images img {
+  filter: invert(100%);
+}

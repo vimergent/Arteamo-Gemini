@@ -1,1 +1,45 @@
-:root { --primary-color: #f08080; --secondary-color: #ffb6c1; --background-color: #fff0f5; --header-font-family: 'Lobster', cursive; --font-family: 'Lobster', cursive; }
+
+:root {
+  --primary-color: #f08080;
+  --secondary-color: #ffb6c1;
+  --background-color: #fff0f5;
+  --font-family: 'Lobster', cursive;
+  --header-font-family: 'Lobster', cursive;
+  --spacing-unit: 1.2rem;
+  --card-border: 3px dotted var(--primary-color);
+  --card-shadow: 0 5px 15px rgba(240,128,128,0.3);
+  --text-align: center;
+}
+
+body {
+  padding: 2rem;
+  background-image: radial-gradient(circle, #fff0f5, #ffe4e1);
+}
+
+header h1 {
+  color: var(--primary-color);
+  font-size: 3rem;
+}
+
+nav a {
+  color: var(--secondary-color);
+}
+
+.project-card {
+  border: var(--card-border);
+  box-shadow: var(--card-shadow);
+  text-align: var(--text-align);
+  background-color: #fff;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.project-card h3 {
+  color: var(--primary-color);
+  font-size: 1.6rem;
+}
+
+.project-images img {
+  border-radius: 15px;
+  filter: sepia(0.5);
+}

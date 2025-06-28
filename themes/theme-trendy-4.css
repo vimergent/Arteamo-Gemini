@@ -1,1 +1,36 @@
-:root { --primary-color: #6a0dad; --secondary-color: #9370db; --background-color: #f3e5f5; --header-font-family: 'Poppins', sans-serif; --font-family: 'Poppins', sans-serif; }
+
+:root {
+  --primary-color: #6a0dad;
+  --secondary-color: #9370db;
+  --background-color: #f3e5f5;
+  --font-family: 'Poppins', sans-serif;
+  --header-font-family: 'Poppins', sans-serif;
+  --spacing-unit: 1.1rem;
+  --card-border: none;
+  --card-shadow: 0 5px 15px rgba(106,13,173,0.2);
+  --text-align: center;
+}
+
+body {
+  padding: 2.5rem;
+  background-image: radial-gradient(circle, #f3e5f5, #e0c0e0);
+}
+
+.project-card {
+  border: var(--card-border);
+  box-shadow: var(--card-shadow);
+  text-align: var(--text-align);
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.project-card h3 {
+  font-size: 1.4rem;
+  color: var(--primary-color);
+}
+
+.project-images img {
+  border-radius: 8px;
+  filter: saturate(1.2);
+}

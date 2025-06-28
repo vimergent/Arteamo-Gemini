@@ -1,1 +1,35 @@
-:root { --primary-color: #1e272e; --secondary-color: #485460; --background-color: #d2dae2; --header-font-family: 'Oswald', sans-serif; --font-family: 'Oswald', sans-serif; }
+
+:root {
+  --primary-color: #1e272e;
+  --secondary-color: #485460;
+  --background-color: #d2dae2;
+  --font-family: 'Oswald', sans-serif;
+  --header-font-family: 'Oswald', sans-serif;
+  --spacing-unit: 1.3rem;
+  --card-border: none;
+  --card-shadow: 0 6px 12px rgba(0,0,0,0.15);
+  --text-align: left;
+}
+
+body {
+  padding: 3rem;
+}
+
+.project-card {
+  border: var(--card-border);
+  box-shadow: var(--card-shadow);
+  text-align: var(--text-align);
+  background-color: #fff;
+  padding: 1.5rem;
+}
+
+.project-card h3 {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.project-images img {
+  border-radius: 0;
+  filter: brightness(0.8);
+}

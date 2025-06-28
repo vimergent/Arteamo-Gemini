@@ -1,1 +1,33 @@
-:root { --primary-color: #333; --secondary-color: #888; --background-color: #fafafa; --header-font-family: 'Montserrat', sans-serif; --font-family: 'Montserrat', sans-serif; }
+
+:root {
+  --primary-color: #333;
+  --secondary-color: #888;
+  --background-color: #fafafa;
+  --font-family: 'Montserrat', sans-serif;
+  --header-font-family: 'Montserrat', sans-serif;
+  --spacing-unit: 1.1rem;
+  --card-border: 1px solid #eee;
+  --card-shadow: 0 1px 3px rgba(0,0,0,0.08);
+  --text-align: center;
+}
+
+body {
+  padding: 2.5rem;
+}
+
+.project-card {
+  border: var(--card-border);
+  box-shadow: var(--card-shadow);
+  text-align: var(--text-align);
+  background-color: #fff;
+  padding-bottom: 1rem;
+}
+
+.project-card h3 {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.project-images img {
+  border-radius: 5px;
+}

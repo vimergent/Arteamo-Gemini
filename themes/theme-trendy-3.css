@@ -1,1 +1,37 @@
-:root { --primary-color: #333; --secondary-color: #555; --background-color: #fff; --header-font-family: 'Arial Black', sans-serif; --font-family: 'Arial', sans-serif; }
+
+:root {
+  --primary-color: #333;
+  --secondary-color: #555;
+  --background-color: #fff;
+  --font-family: 'Arial', sans-serif;
+  --header-font-family: 'Arial Black', sans-serif;
+  --spacing-unit: 1.5rem;
+  --card-border: 2px solid var(--primary-color);
+  --card-shadow: none;
+  --text-align: left;
+}
+
+body {
+  padding: 1rem;
+  background-color: #eee;
+}
+
+.project-card {
+  border: var(--card-border);
+  box-shadow: var(--card-shadow);
+  text-align: var(--text-align);
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 0;
+}
+
+.project-card h3 {
+  font-size: 1.8rem;
+  color: var(--primary-color);
+  text-transform: uppercase;
+}
+
+.project-images img {
+  border-radius: 0;
+  border: 1px solid #ccc;
+}

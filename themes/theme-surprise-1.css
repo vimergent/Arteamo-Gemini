@@ -1,1 +1,44 @@
-:root { --primary-color: #0f0; --secondary-color: #0f0; --background-color: #000; --header-font-family: 'Courier New', Courier, monospace; --font-family: 'Courier New', Courier, monospace; }
+
+:root {
+  --primary-color: #0f0;
+  --secondary-color: #0f0;
+  --background-color: #000;
+  --font-family: 'Courier New', Courier, monospace;
+  --header-font-family: 'Courier New', Courier, monospace;
+  --spacing-unit: 0.6rem;
+  --card-border: 1px solid var(--primary-color);
+  --card-shadow: none;
+  --text-align: left;
+}
+
+body {
+  padding: 0.5rem;
+  background-color: #000;
+  color: var(--primary-color);
+}
+
+header h1 {
+  color: var(--secondary-color);
+  text-shadow: 0 0 2px var(--secondary-color);
+}
+
+nav a {
+  color: var(--primary-color);
+}
+
+.project-card {
+  border: var(--card-border);
+  box-shadow: var(--card-shadow);
+  text-align: var(--text-align);
+  background-color: #000;
+  padding: 0.5rem;
+}
+
+.project-card h3 {
+  color: var(--secondary-color);
+  font-size: 1rem;
+}
+
+.project-images img {
+  filter: grayscale(100%) contrast(200%);
+}

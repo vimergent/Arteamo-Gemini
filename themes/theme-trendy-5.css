@@ -1,1 +1,37 @@
-:root { --primary-color: #c0392b; --secondary-color: #e74c3c; --background-color: #fbeee6; --header-font-family: 'Playfair Display', serif; --font-family: 'Playfair Display', serif; }
+
+:root {
+  --primary-color: #c0392b;
+  --secondary-color: #e74c3c;
+  --background-color: #fbeee6;
+  --font-family: 'Playfair Display', serif;
+  --header-font-family: 'Playfair Display', serif;
+  --spacing-unit: 1.3rem;
+  --card-border: 2px solid var(--primary-color);
+  --card-shadow: 0 6px 12px rgba(192,57,43,0.2);
+  --text-align: left;
+}
+
+body {
+  padding: 2rem;
+  background-color: #fdf5e6;
+}
+
+.project-card {
+  border: var(--card-border);
+  box-shadow: var(--card-shadow);
+  text-align: var(--text-align);
+  background-color: #fff;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.project-card h3 {
+  font-size: 1.7rem;
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+.project-images img {
+  border-radius: 3px;
+  border: 1px solid var(--secondary-color);
+}

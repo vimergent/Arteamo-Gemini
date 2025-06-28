@@ -1,1 +1,32 @@
-:root { --primary-color: #000; --secondary-color: #333; --background-color: #fff; --header-font-family: 'Roboto Mono', monospace; --font-family: 'Roboto Mono', monospace; }
+
+:root {
+  --primary-color: #000;
+  --secondary-color: #333;
+  --background-color: #fff;
+  --font-family: 'Roboto Mono', monospace;
+  --header-font-family: 'Roboto Mono', monospace;
+  --spacing-unit: 0.8rem;
+  --card-border: 2px dashed var(--primary-color);
+  --card-shadow: none;
+  --text-align: left;
+}
+
+body {
+  padding: 1rem;
+}
+
+.project-card {
+  border: var(--card-border);
+  box-shadow: var(--card-shadow);
+  text-align: var(--text-align);
+  background-color: #f8f8f8;
+}
+
+.project-card h3 {
+  font-size: 1.1rem;
+  text-transform: uppercase;
+}
+
+.project-images img {
+  filter: grayscale(100%);
+}

@@ -1,1 +1,38 @@
-:root { --primary-color: #2d5a2d; --secondary-color: #5a8a5a; --background-color: #f0f5f0; --header-font-family: 'Merriweather', serif; --font-family: 'Merriweather', serif; }
+
+:root {
+  --primary-color: #2d5a2d;
+  --secondary-color: #5a8a5a;
+  --background-color: #f0f5f0;
+  --font-family: 'Merriweather', serif;
+  --header-font-family: 'Merriweather', serif;
+  --spacing-unit: 1.2rem;
+  --card-border: none;
+  --card-shadow: 0 8px 16px rgba(45,90,45,0.2);
+  --text-align: left;
+}
+
+body {
+  padding: 3rem;
+  background-image: linear-gradient(to bottom right, var(--background-color), #e0e5e0);
+}
+
+.project-card {
+  border: var(--card-border);
+  box-shadow: var(--card-shadow);
+  text-align: var(--text-align);
+  background-color: #fff;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.project-card h3 {
+  font-size: 1.6rem;
+  color: var(--primary-color);
+  padding: 1rem;
+}
+
+.project-images img {
+  border-radius: 10px;
+  margin: 0.5rem;
+  border: 2px solid var(--secondary-color);
+}

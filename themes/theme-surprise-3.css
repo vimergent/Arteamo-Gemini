@@ -1,1 +1,45 @@
-:root { --primary-color: #00aaff; --secondary-color: #0077cc; --background-color: #001f3f; --header-font-family: 'Architects Daughter', cursive; --font-family: 'Architects Daughter', cursive; }
+
+:root {
+  --primary-color: #00aaff;
+  --secondary-color: #0077cc;
+  --background-color: #001f3f;
+  --font-family: 'Architects Daughter', cursive;
+  --header-font-family: 'Architects Daughter', cursive;
+  --spacing-unit: 1rem;
+  --card-border: 2px solid var(--primary-color);
+  --card-shadow: 0 0 15px rgba(0,170,255,0.5);
+  --text-align: left;
+}
+
+body {
+  padding: 2rem;
+  background-color: #001f3f;
+  color: #fff;
+}
+
+header h1 {
+  color: var(--primary-color);
+  text-shadow: 2px 2px 5px #000;
+}
+
+nav a {
+  color: var(--secondary-color);
+}
+
+.project-card {
+  border: var(--card-border);
+  box-shadow: var(--card-shadow);
+  text-align: var(--text-align);
+  background-color: #002b5c;
+  padding: 1.2rem;
+}
+
+.project-card h3 {
+  color: var(--primary-color);
+  font-size: 1.4rem;
+}
+
+.project-images img {
+  border-radius: 0;
+  filter: invert(0.1);
+}

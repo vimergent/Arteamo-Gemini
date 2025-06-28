@@ -1,1 +1,33 @@
-:root { --primary-color: #4a4a4a; --secondary-color: #9b9b9b; --background-color: #f8f8f8; --header-font-family: 'Source Sans Pro', sans-serif; --font-family: 'Source Sans Pro', sans-serif; }
+
+:root {
+  --primary-color: #4a4a4a;
+  --secondary-color: #9b9b9b;
+  --background-color: #f8f8f8;
+  --font-family: 'Source Sans Pro', sans-serif;
+  --header-font-family: 'Source Sans Pro', sans-serif;
+  --spacing-unit: 1rem;
+  --card-border: none;
+  --card-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  --text-align: left;
+}
+
+body {
+  padding: 2rem;
+}
+
+.project-card {
+  border: var(--card-border);
+  box-shadow: var(--card-shadow);
+  text-align: var(--text-align);
+  background-color: #fff;
+  padding: 1rem;
+}
+
+.project-card h3 {
+  font-size: 1.2rem;
+  font-weight: normal;
+}
+
+.project-images img {
+  border-radius: 0;
+}
